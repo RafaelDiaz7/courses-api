@@ -7,6 +7,8 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
+
+	cors "github.com/rs/cors/wrapper/gin"
 )
 
 type Server struct {
@@ -19,7 +21,7 @@ func New(host string, port uint) Server {
 		engine:   gin.New(),
 		httpAddr: fmt.Sprintf("%s:%d", host, port),
 	}
-
+	srv.engine.Use(cors.Default())
 	srv.registerRoutes()
 	return srv
 }
