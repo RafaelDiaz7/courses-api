@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	dbUser = "fuser"
-	dbPass = "password123"
+	dbUser = "user"
+	dbPass = "78jsh90io9"
 	dbHost = "localhost"
 	dbPort = "3306"
 	dbName = "coursesdb"
