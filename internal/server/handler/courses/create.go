@@ -53,10 +53,10 @@ func CreateHandler() gin.HandlerFunc {
 		}
 		//I should make cbURI with const's for more security i guess
 		cluster, err := gocb.Connect(
-			"174.138.44.19:8091",
+			"192.168.0.19:8091",
 			gocb.ClusterOptions{
 				Username: "Administrator",
-				Password: "gregoria123R",
+				Password: "79uhio4",
 			})
 		if err != nil {
 			ctx.JSON(http.StatusInternalServerError, err.Error())
